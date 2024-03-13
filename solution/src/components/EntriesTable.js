@@ -9,6 +9,7 @@ export function EntriesTable({ entries }) {
       </thead>
       <tbody>
         {entries.map((entry, index) => (
+          // Alternate row colors
           <tr
             key={index}
             style={index % 2 === 0 ? styles.evenRow : styles.oddRow}
@@ -32,9 +33,9 @@ const styles = {
     margin: "auto",
   },
   evenRow: {
-    backgroundColor: "#f2f2f2", // This should be the color for even rows
+    backgroundColor: "#f2f2f2",
   },
   oddRow: {
-    backgroundColor: "#ffffff", //
+    backgroundColor: "#ffffff",
   },
 };

@@ -12,6 +12,7 @@ function App() {
   const [error, setError] = useState(null);
   const [isCheckingName, setIsCheckingName] = useState(false);
 
+  // Get locations on mount
   useEffect(() => {
     getLocations().then(setLocations);
   }, []);
@@ -66,6 +67,7 @@ function App() {
           />
         </div>
         <div style={styles.buttons}>
+          {/* Clear out the entries */}
           <button onClick={() => setEntries([])} style={styles.button}>
             Clear
           </button>

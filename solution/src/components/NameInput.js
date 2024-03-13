@@ -8,6 +8,7 @@ export function NameInput({ value, onChange, error }) {
         onChange={onChange}
         style={styles.nameInput}
       />
+      {/* Show error message */}
       {error && <div style={styles.error}>{error}</div>}
     </div>
   );
