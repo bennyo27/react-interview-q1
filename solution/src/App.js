@@ -26,6 +26,7 @@ function App() {
       const timer = setTimeout(() => {
         isNameValid(name).then((isValid) => {
           setIsCheckingName(false);
+          // NOTE: Can add validation against existing entries here with entries.some(entry => entry.name === name)
           if (!isValid) {
             setError("This name has already been taken");
           } else {
